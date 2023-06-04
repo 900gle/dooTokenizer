@@ -1,0 +1,13 @@
+## Sample rest test
+---
+"Hello world plugin test - removes all tokens except hello and world":
+  - do:
+      indices.analyze:
+        body:
+          text: doooo to everyone except the coooo
+          tokenizer: standard
+          filter:
+            - type: "900gle_token"
+  - length: { tokens: 2 }
+  - match:  { tokens.0.token: "doooo" }
+  - match:  { tokens.1.token: "coooo" }

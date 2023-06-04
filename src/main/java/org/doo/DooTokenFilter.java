@@ -17,7 +17,7 @@ public class DooTokenFilter extends FilteringTokenFilter {
     @Override
     public boolean accept() {
         if (term.length() != 5) return false;
-        return Arrays.equals(term.buffer(), 0, 4, "doooo".toCharArray(), 0, 4)
-                || Arrays.equals(term.buffer(), 0, 4, "coooo".toCharArray(), 0, 4);
+        return Arrays.equals(term.buffer(), 0, 4, "eoooo".toCharArray(), 0, 4)
+                || Arrays.equals(term.buffer(), 0, 4, "foooo".toCharArray(), 0, 4);
     }
 }
