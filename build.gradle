@@ -1,8 +1,8 @@
-ext.pluginApiVersion = '8.7.0'
+ext.pluginApiVersion = '8.8.1'
 ext.luceneVersion = '9.5.0'
 
 buildscript {
-    ext.pluginApiVersion = '8.7.0'
+    ext.pluginApiVersion = '8.8.1'
     repositories {
         mavenCentral()
     }
@@ -20,7 +20,7 @@ esplugin {
 }
 
 group 'org.doo'
-version '8.7'
+version '8.8.1'
 
 repositories {
     mavenLocal()
